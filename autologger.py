@@ -18,11 +18,11 @@ def log(url, num, ac, pas, msg, login, password):
         response = br.submit()
         content = response.read()
         
+	os.system('clear')
+
         if content.find(msg) == -1:
-                os.system('clear')
                 print "Failed to login"
         else:
-                os.system('clear')
                 print "Logged in"
 
 
